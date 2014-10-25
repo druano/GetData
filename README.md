@@ -10,7 +10,8 @@ NOTE: Make sure you have downloaded the data (see the link above) and that your 
 
 The original sensor signals obtained were pre-processed, normalised and bounded within [-1,1]. For a more detailed description on how the original signals were processed see the "features_info.txt" and "README.txt" files included in the original downloaded.
 
-**Code Book**
+=======================================================
+
 The tidy data generated contains 68 variables and 30 rows (same as the number of persons included in the study). Multiple measurements per subject were reduced to the average of each variable for each activity.
 
 **Variables included in the tidy data are:**  
