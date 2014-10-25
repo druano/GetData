@@ -14,10 +14,10 @@ The original sensor signals obtained were pre-processed, normalised and bounded 
 The tidy data generated contains 68 variables and 30 rows (same as the number of persons included in the study). Multiple measurements per subject were reduced to the average of each variable for each activity.
 
 **Variables included in the tidy data are:**  
-*subject   
-*activity   
-*Mean and Standard Deviation     
-        +2 x 3 - tBodyAcc-meanORstd-XYZ = body linear acceleration signals from the 3-axial directions   
+* subject   
+* activity   
+* Mean and Standard Deviation     
+        - 2 x 3 - tBodyAcc-meanORstd-XYZ = body linear acceleration signals from the 3-axial directions   
         +2 x 3 - tGravityAcc-meanORstd-XYZ = gravity acceleration signals from the 3-axial directions   
         +2 x 3 - tBodyAccJerk-meanORstd-XYZ = Jerk signals derived from body linear accelerations   
         +2 x 3 - tBodyGyro-meanORstd-XYZ = body angular velocity from the 3-axial directions   
