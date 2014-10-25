@@ -1,8 +1,8 @@
 **WHAT:**   
-Generate a tidy data from Human Activity Recognition Using Smartphones Dataset obtained at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+Generate a tidy data from the Human Activity Recognition Using Smartphones Dataset obtained at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 **HOW:**   
-In R, run > source(run_analysis.R)
+In R, run > source(run_analysis.R)    
 NOTE: Make sure you have downloaded the data (see the link above) and that your working directory is ./UCI HAR Dataset
 
 =======================================================
