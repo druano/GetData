@@ -5,7 +5,7 @@ The original sensor signals obtained were pre-processed, normalised and bounded 
 
 =======================================================
         
-The tidy data generated contains 68 variables and 30 rows (same as the number of persons included in the study). Multiple measurements per subject were reduced to the average of each variable for each activity.
+The tidy data generated contains 68 variables and 30 rows (same as the number of persons included in the study). Multiple measurements per subject and activity were reduced to its average.
 
 **Variables included in the tidy data are:**  
         * subject   
