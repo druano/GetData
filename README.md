@@ -5,37 +5,17 @@ Generate a tidy data from the Human Activity Recognition Using Smartphones Datas
 In R, run > source(run_analysis.R)    
 NOTE: Make sure you have downloaded the data (see the link above) and that your working directory is ./UCI HAR Dataset
 
+**The script**
+The "run_analysis.md" script performs the following steps in order to obtain the tidy data:    
+* Creates a function to read multiple files    
+* Using the function created above the 3 data sets divided between the train and the test data are read into R (creating the objects: subjects, activities and variables)    
+* Read the descriptive variable names from file features.txt" and assign them as column names of the object: variables    
+* Using the column names select only those columns that contain the variables mean and standard deviation    
+* Replace the 1 to 6 activity numbers in the activities object by its' descriptive activity names    
+* Split the object with all the variables per each combination of subject and activity    
+* Per each sample and activity combination compute the average of each variable    
+* Add subject and activity information to the data.frame using the rownames    
+* And finally write the tidy data produced to a file named "tidyData.txt"  
+
 =======================================================
 
-**Brief discription of the data:**   
-30 volunteers aged between 19-48 years performed six activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING. A smartphone (Samsung Galaxy S II) on the waist allowed the captured of 3-axial linear accelerations and 3-axial angular velocities.
-
-The original sensor signals obtained were pre-processed, normalised and bounded within [-1,1]. For a more detailed description on how the original signals were processed see the "features_info.txt" and "README.txt" files included in the original downloaded.
-
-=======================================================
-
-The tidy data generated contains 68 variables and 30 rows (same as the number of persons included in the study). Multiple measurements per subject were reduced to the average of each variable for each activity.
-
-**Variables included in the tidy data are:**  
-* subject   
-* activity   
-* Mean and Standard Deviation     
-        * (2 x 3 = 6 columns) - tBodyAcc-meanORstd-XYZ: body linear acceleration signals from the 3-axial directions   
-        * (2 x 3) - tGravityAcc-meanORstd-XYZ: gravity acceleration signals from the 3-axial directions   
-        * (2 x 3) - tBodyAccJerk-meanORstd-XYZ: Jerk signals derived from body linear accelerations   
-        * (2 x 3) - tBodyGyro-meanORstd-XYZ: body angular velocity from the 3-axial directions   
-        * (2 x 3) - tBodyGyroJerk-meanORstd-XYZ: Jerk signals derived from body angular velocities   
-        * (2 columns) - tBodyAccMag-meanORstd: Magnitude of the body linear acceleration   
-        * (2) - tGravityAccMag-meanORstd: Magnitude of the gravity acceleration signals   
-        * (2) - tBodyAccJerkMag-meanORstd: Magnitude of the jerk signals derived from body linear accelerations   
-        * (2) - tBodyGyroMag-meanORstd: Magnitude of the body angular velocities   
-        * (2) - tBodyGyroJerkMag-meanORstd: Magnitude of the jerk signals derived from body angular velocities   
-        * (2) - fBodyAcc-meanORstd-XYZ: body linear acceleration signals from the 3-axial directions   
-        * (2 x 3) - fBodyAccJerk-meanORstd-XYZ: Jerk signals derived from body linear accelerations   
-        * (2 x 3) - fBodyGyro-meanORstd-XYZ: body angular velocity from the 3-axial directions   
-        * (2) - fBodyAccMag-meanORstd: Magnitude of the body linear acceleration   
-        * (2) - fBodyAccJerkMag-meanORstd: Magnitude of the jerk signals derived from body linear accelerations   
-        * (2) - fBodyGyroMag-meanORstd: Magnitude of the body angular velocities   
-        * (2) - tBodyGyroJerkMag-meanORstd: Magnitude of the jerk signals derived from body angular velocities   
-
-NOTE: Some variables have a preceding f (and not t) to denote that the original time signals were Fast Fourier Transformed into frequencies
