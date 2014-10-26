@@ -23,8 +23,8 @@ labels = setNames(c("WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTIN
 act[] <- labels[unlist(act)]
 
 # 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-split_data <- split (mean_std,c(subjects,act)) # split the object with all the variables per each combination of subject and activity
-symplify_data <- sapply(split_data, function(x) colMeans(x), simplify=T) # * Per each sample and activity combination compute the average of each variable
+split_data <- split (mean_std,c(subjects,act)) # split the data.frame per each combination of subject and activity
+symplify_data <- sapply(split_data, function(x) colMeans(x), simplify=T) # Per each sample and activity combination compute the average of each variable
 t_data <- t(symplify_data) # transpose the genereted data.frame
 final_data <- cbind("subject" = sub("\\..*", "", row.names(t_data)), 
                     "activity" = sub(".*\\.", "", row.names(t_data)),
