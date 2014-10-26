@@ -1,11 +1,13 @@
-**WHAT:**   
+**WHAT**   
 Generate a tidy data from the Human Activity Recognition Using Smartphones Dataset obtained at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-**HOW:**   
-In R, run > source(run_analysis.R)    
+**HOW**   
+In R run:    
+> source(run_analysis.R)    
+
 NOTE: Make sure you have downloaded the data (see the link above) and that your working directory is ./UCI HAR Dataset
 
-**The script**
+**The script**    
 The "run_analysis.md" script performs the following steps in order to obtain the tidy data:    
 * Creates a function to read multiple files    
 * Using the function created above the 3 data sets divided between the train and the test data are read into R (creating the objects: subjects, activities and variables)    
