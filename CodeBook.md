@@ -1,5 +1,6 @@
 **Brief discription of the data:**   
-        30 volunteers aged between 19-48 years performed six activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING. A smartphone (Samsung Galaxy S II) on the waist allowed the captured of 3-axial linear accelerations and 3-axial angular velocities.
+
+30 volunteers aged between 19-48 years performed six activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING. A smartphone (Samsung Galaxy S II) on the waist allowed the captured of 3-axial linear accelerations and 3-axial angular velocities.
 
 The original sensor signals obtained were pre-processed, normalised and bounded within [-1,1]. For a more detailed description on how the original signals were processed see the "features_info.txt" and "README.txt" files included in the original downloaded.
 
@@ -8,7 +9,8 @@ The original sensor signals obtained were pre-processed, normalised and bounded 
 The tidy data generated contains 68 variables and 30 rows (same as the number of persons included in the study). Multiple measurements per subject and activity were reduced to its average.
 
 **Variables included in the tidy data are:**  
-        * subject   
+
+* subject   
 * activity   
 * Mean and Standard Deviation     
 * (2 x 3 = 6 columns) - tBodyAcc-meanORstd-XYZ: body linear acceleration signals from the 3-axial directions   
